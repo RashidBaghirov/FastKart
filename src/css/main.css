@@ -281,9 +281,130 @@ footer .end .cards .cardImages img {
   width: 40px;
 }
 
+#banners {
+  padding: 40px;
+}
+#banners .adverts {
+  position: relative;
+}
+#banners .adverts .banner-detail {
+  position: absolute;
+  top: 53px;
+  left: 24px;
+}
+#banners .adverts .banner-detail h5 {
+  overflow: hidden;
+  font-size: calc(15px + 3 * (100vw - 320px) / 1600);
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem !important;
+}
+#banners .adverts .banner-detail h4 {
+  overflow: hidden;
+  font-size: calc(16px + 6 * (100vw - 320px) / 1600);
+  line-height: 1.4;
+  font-weight: 700;
+}
+#banners .adverts .banner-detail .shop {
+  color: #239698;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  font-size: 17px;
+  margin-right: auto !important;
+  text-align: left;
+  border: none;
+  font-weight: 700;
+}
+#banners .adverts .banner-detail .shop svg {
+  margin-left: 6px;
+}
+
+.category {
+  padding: 80px;
+}
+.category h2 {
+  overflow: hidden;
+  padding-bottom: 20px;
+  font-weight: 700;
+  color: #222;
+}
+.category .category-box-list {
+  margin: 0 10px;
+  padding: 20px;
+  background-color: #f1f1f3;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  z-index: 0;
+}
+.category .category-box-list .category-name {
+  margin-bottom: 20px;
+  color: #222;
+  display: block;
+}
+.category .category-box-list .category-box-view a {
+  display: flex;
+  justify-content: center;
+}
+.category .category-box-list .category-box-view .shop-button {
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #239698;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 600;
+  position: absolute;
+  bottom: -40px;
+  opacity: 0;
+  transition: 0.6s;
+}
+.category .category-box-list .category-box-view .shop-button svg {
+  margin-left: 5px;
+}
+.category .category-box-list:hover .category-box-view .shop-button {
+  opacity: 1;
+  bottom: 17px;
+}
+.category .category-box-list:hover::after {
+  opacity: 1;
+}
+.category .category-box-list:hover .category-name h4 {
+  color: #239698;
+  transition: 0.6s all;
+}
+.category .category-box-list a {
+  text-decoration: none;
+}
+.category .category-box-list a h4 {
+  overflow: hidden;
+}
+.category .category-box-list a h6 {
+  overflow: hidden;
+}
+.category .category-box-list::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(35, 150, 152, 0.15);
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.category .category-box-list .slick-initialized .slick-slide {
+  display: block;
+  margin: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  overflow: hidden;
 }

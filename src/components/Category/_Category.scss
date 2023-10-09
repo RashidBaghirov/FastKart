@@ -1,0 +1,106 @@
+.category {
+    padding: 80px;
+
+    h2 {
+        overflow: hidden;
+        padding-bottom: 20px;
+        font-weight: 700;
+        color: #222;
+    }
+
+    .category-box-list {
+        margin: 0 10px;
+        padding: 20px;
+        background-color: #f1f1f3;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        z-index: 0;
+
+        .category-name {
+            margin-bottom: 20px;
+            color: #222;
+            display: block;
+        }
+
+        .category-box-view {
+            a {
+                display: flex;
+                justify-content: center;
+            }
+
+            .shop-button {
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: #239698;
+                font-size: 12px;
+                color: #fff;
+                font-weight: 600;
+                position: absolute;
+                bottom: -40px;
+                opacity: 0;
+                transition: 0.6s;
+
+                svg {
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        &:hover{
+            .category-box-view {
+                .shop-button {
+                    opacity: 1;
+                    bottom: 17px;
+                }
+            }
+           &::after{
+            opacity: 1;
+           }
+
+           .category-name{
+            h4{
+                color: #239698;
+                transition: 0.6s all;
+            }
+           }
+        }
+
+        a {
+            text-decoration: none;
+
+            h4 {
+                overflow: hidden;
+
+            }
+
+            h6 {
+                overflow: hidden;
+            }
+        }
+
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba( #239698, 0.15);
+            z-index: -1;
+            opacity: 0;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+
+
+        .slick-initialized {
+            .slick-slide {
+                display: block;
+                margin: 0;
+            }
+        }
+
+    }
+}
