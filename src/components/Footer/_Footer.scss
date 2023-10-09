@@ -1,0 +1,133 @@
+footer {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+
+    .footerInfo {
+        .image-text-icon {
+            .image {
+                margin: 40px 0 30px 0;
+
+                img {
+                    width: 150px;
+                }
+            }
+
+            .text {
+                p {
+                    width: 95%;
+                    line-height: 26px;
+                    color: #bfbfbf;
+                }
+            }
+
+            .icons {
+                display: flex;
+
+                a {
+                    color: white;
+
+                    .icc {
+                        margin: 5px;
+                        padding: 10px 14px;
+                        border-radius: 50%;
+                        background-color: #1e2e2e;
+                        transition: .3s;
+
+                        &:hover {
+                            background-color: #4a5568;
+                        }
+                    }
+                }
+            }
+        }
+
+        .title-list {
+            margin: 40px 0;
+
+            .title {
+                margin-bottom: 20px;
+            }
+
+            .list {
+                ul {
+                    list-style: none;
+
+                    li {
+                        color: #bfbfbf;
+                        line-height: 40px;
+                        width: 100%;
+                        margin-left: -35px;
+                        transition: .6s;
+                        padding: 0;
+                        position: relative; 
+
+                        &::before {
+                            content: ''; 
+                            color: #bfbfbf;
+                            margin-right: 10px; 
+                        }
+
+                        a {
+                            color: #bfbfbf;
+                            text-decoration: none;
+                        }
+
+                        &:hover {
+                            margin-left: -25px;
+
+                            &::before {
+                                content: '\25CF';
+                            }
+                        }
+                    }
+
+                    .myList {
+                        line-height: 50px;
+
+                        .bi {
+                            margin: 0 10px 0 0;
+                        }
+
+                        &:hover {
+                            margin-left: -35px;
+
+                            &::before {
+                                content: '';
+                            }
+                        }
+                    }
+
+                    .firstList {
+                        line-height: 22px;
+                    }
+
+                }
+            }
+        }
+
+    }
+
+    .end {
+        border-top: 1px solid gray;
+        margin-top: 70px;
+        padding: 40px 0 32px 0;
+
+        .copyRight {
+            p {
+                color: #bfbfbf;
+            }
+        }
+
+        .cards {
+            text-align: right;
+
+            .cardImages {
+                img {
+                    margin: 0 5px;
+                    width: 40px;
+                }
+            }
+        }
+    }
+}
