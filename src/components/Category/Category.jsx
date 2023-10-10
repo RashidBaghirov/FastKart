@@ -96,6 +96,7 @@ const SlickSlider = () => {
                     src={category.image}
                     alt={category.title}
                     className="img-fluid blur-up lazyloaded"
+                    draggable="false"
                   />
                 </a>
                 <button

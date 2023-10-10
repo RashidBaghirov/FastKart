@@ -1,0 +1,114 @@
+#blog_comp{
+    padding: 80px;
+    .caption {
+        margin: 12px 6px;
+        padding: 5px;
+        overflow: hidden;
+    
+    }
+    
+    .image-info {
+        width: 100%;
+        border: 1px solid rgb(235, 235, 235);
+        border-radius: 10px;
+        margin-bottom: 40px;
+        transition: .3s;
+        height: 460px;
+    
+        .image {
+            overflow: hidden;
+    
+            img {
+                width: 100%;
+                overflow: hidden;
+                transition: .3s;
+                transition: transform 0.3s;
+                overflow: hidden;
+            }
+        }
+    
+        .info {
+            padding: 12px;
+    
+            .likeBtn {
+                margin: 12px;
+                padding: 5px 14px;
+                display: inline-block;
+                border-radius: 15px;
+                font-size: 12px;
+                font-weight: 500;
+                background-color: #e9f4f4;
+                color: #70babb;
+                transition: .3s;
+            }
+    
+            a {
+                color: black;
+                text-decoration: none;
+    
+                h4 {
+                    padding: 0 12px;
+                    font-size: 21px;
+                }
+            }
+    
+            .date {
+                padding: 7px 0 0 12px;
+            }
+        }
+    
+        &:hover {
+    
+            .image {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+    
+            .info {
+                .likeBtn {
+                    background-color: #239698;
+                    color: white;
+                }
+            }
+        }
+    }
+
+
+    .slick-slider {
+        overflow: hidden;
+        position: static;
+
+        .slick-prev,
+        .slick-next {
+            background: transparent;
+        }
+
+
+        .slick-prev:before,
+        .slick-next:before {
+            font-family: 'slick';
+            font-size: 20px;
+            line-height: 1;
+            opacity: 1;
+            color:#239698;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+
+        .slick-prev {
+            position: absolute;
+            top: 40px;
+            right: 187px !important;
+            left: inherit !important;
+        }
+
+        .slick-next {
+            position: absolute;
+            display: block;
+            right: 158px;
+            top: 40px;
+        }
+    }
+}

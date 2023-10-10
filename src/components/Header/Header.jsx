@@ -13,7 +13,8 @@ function Header() {
                   <Link to="" className="nav-logo">
                     <img
                       src="https://themes.pixelstrap.com/fastkart/assets/images/logo/4.png"
-                      alt=""
+                      alt="Logo"
+                      draggable="false"
                     />
                   </Link>
                 </div>
@@ -75,7 +76,7 @@ function Header() {
                 </div>
                 <div class="rightside-menu support-sidemenu">
                   <div class="support-box">
-                    <div class="support-image">
+                    <div class="support-image me-2">
                       <img
                         src="https://themes.pixelstrap.com/fastkart/assets/images/icon/support.png"
                         class="img-fluid blur-up lazyloaded"

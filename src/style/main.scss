@@ -3,6 +3,13 @@
 @import './../components/Footer/Footer';
 @import './../components/Banners/Banners';
 @import './../components/Category/Category';
+@import './../components/Vegetables/Vegetables';
+@import './../components/Bank/Bank';
+@import './../components/BestSeller/BestSeller';
+@import './../components/Adverts/Adverts';
+@import './../components/SafeDelivery/safedelivery';
+@import './../components/BlogComponent/BlogComponents';
+@import './../components/ServiceComponent/Service';
 *{
     margin: 0;
     padding: 0;
@@ -14,3 +21,4 @@
 h1,h2,h3,h4,h5,h6{
     overflow: hidden;
 }
+

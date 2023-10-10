@@ -1,0 +1,71 @@
+.advertss {
+    margin-top: 40px;
+    padding: 80px;
+
+    position: relative;
+    overflow: hidden;
+
+    .image {
+        position: relative;
+        border-radius: 15px;
+        .title {
+            position: absolute;
+            padding: calc(15px + (30 - 15) * ((100vw - 320px) / (1920 - 320))) !important;
+            margin-right: auto !important;
+            text-align: left;
+
+            h2 {
+                font-size: calc(18px + (32 - 18) * ((100vw - 320px) / (1920 - 320)));
+                margin-bottom: 10px;
+                line-height: 1.4;
+                font-weight: 700 !important;
+                font-style: italic;
+                font-family: initial;
+            }
+
+
+            h3 {
+                font-size: calc(18px + (32 - 18) * ((100vw - 320px) / (1920 - 320)));
+                margin-bottom: 10px;
+                line-height: 1.4;
+                font-weight: 700 !important;
+          
+            }
+
+            h4{
+                font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1920 - 320)));
+                margin-bottom: 5px;
+                line-height: 1.4;
+                color: #4a5568;
+            }
+
+            .btn{
+                padding: calc(8px + (11 - 8) * ((100vw - 320px) / (1920 - 320))) calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
+                font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+                font-weight: 500;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #239698;
+                color: white;
+            }
+        }
+
+
+        &:hover{
+            animation: flash;
+        }
+    }
+}
+
+@keyframes flash{
+    0%{
+        opacity: 0.4;
+    transition: 0.3s ease-in-out;
+    }
+
+    100%{
+        opacity: 1;
+        transition: 0.3s ease-in-out;
+    }
+}

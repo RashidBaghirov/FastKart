@@ -1,0 +1,64 @@
+.service_base {
+    padding-right: 80px;
+    padding-left: 80px;
+    .contDelivery {
+        overflow: hidden;
+
+        .delivery {
+            margin-bottom: 30px;
+
+            .services {
+                display: flex;
+                border-radius: 5px;
+                margin: 0 5px;
+                background-color: #f2f2f2;
+                width: 100%;
+                margin-bottom: 30px;
+                padding: 8px;
+                height: 140px;
+
+                .icon {
+                    padding: 45px 10px 0 10px;
+                    z-index: 1;
+                    color: #239698;
+                }
+
+                .service-detail {
+                    padding: 40px 5px 22px 2px;
+                    overflow: hidden;
+
+                    h4 {
+                        font-size: 20px;
+                        color: #222222;
+                    }
+
+                    h6 {
+                        color: #5a7e8c;
+                        font-size: 14px;
+                    }
+                }
+
+                transition: .5s;
+
+                &:hover {
+                    background-color: #239698;
+
+                    .icon {
+                        color: white;
+                    }
+
+                    .service-detail {
+
+                        h4 {
+                            color: white;
+                        }
+
+                        h6 {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

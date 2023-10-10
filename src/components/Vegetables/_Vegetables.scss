@@ -1,0 +1,204 @@
+.vegetables {
+    margin-top: 40px;
+    padding-right: 80px;
+    padding-left: 80px;
+    position: relative;
+    overflow: hidden;
+
+    h2 {
+        overflow: hidden;
+        padding-bottom: 20px;
+        font-weight: 700;
+        color: #222;
+        
+    }
+
+    .category-box-list {
+        margin: 0 10px;
+        padding: 20px;
+        border: 1px solid #ececec;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+        z-index: 0;
+
+        a {
+            .img-fluid {
+                width: 70%;
+                height: calc(80px + (140 - 80) * ((100vw - 320px) / (1920 - 320)));
+                margin: 30px auto 20px;
+                object-fit: contain;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+        .product-detail {
+            text-align: left;
+            margin-top: 15px;
+            position: relative;
+
+
+            .rating {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    display: inline-block;
+                    font-size: 14px;
+
+                    .feather {
+                        width: 14px;
+                        height: 14px;
+                        stroke: #ffb321;
+                    }
+
+                    .fill {
+                        fill: #ffb321;
+                    }
+                }
+            }
+
+
+            a {
+                text-decoration: none;
+                color: #222;
+
+                .name {
+                    width: 70%;
+                    margin-top: 5px;
+                    text-transform: capitalize;
+                    overflow: hidden;
+                    transition: all 0.3s ease-in-out;
+                    text-align: left;
+                }
+            }
+
+
+            .price {
+                margin-top: 5px;
+                font-weight: 500;
+                color: #239698;
+
+                del {
+                    margin-left: 10px;
+                    color: #4a5568;
+                    font-weight: 400;
+                }
+            }
+
+
+            .buy-button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 53px;
+                height: 38px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                padding: 7px 11px;
+                background-color: #239698;
+                color: #fff;
+
+
+                svg {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+
+            .qty-box {
+                display: none;
+                transition: all 0.3s ease;
+                z-index: 1;
+                margin-top: 0;
+                width: 100%;
+                max-width: 250px;
+
+                .input-group {
+                    box-shadow: 0 2px 4px 0 #dedede;
+                    border-radius: 2px;
+                    padding: 4px;
+                    text-align: center;
+                    z-index: 0;
+                    background-color: #fff;
+
+                    .btn {
+                        padding: 7px 12px;
+                        font-size: 10px;
+                        line-height: 1;
+                        border-radius: 2px !important;
+                        background-color: #f8f8f8;
+                    }
+                }
+            }
+
+      
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(#239698, 0.15);
+            z-index: -1;
+            opacity: 0;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+
+
+        .slick-initialized {
+            .slick-slide {
+                display: block;
+                margin: 0;
+            }
+        }
+
+    }
+
+
+
+    .slick-slider {
+        overflow: hidden;
+        position: static;
+
+        .slick-prev,
+        .slick-next {
+            background: transparent;
+        }
+
+
+        .slick-prev:before,
+        .slick-next:before {
+            font-family: 'slick';
+            font-size: 20px;
+            line-height: 1;
+            opacity: 1;
+            color:#239698;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+
+        .slick-prev {
+            position: absolute;
+            top: 40px;
+            right: 187px !important;
+            left: inherit !important;
+        }
+
+        .slick-next {
+            position: absolute;
+            display: block;
+            right: 158px;
+            top: 40px;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+.bank {
+    margin-top: 40px;
+    padding-right: 80px;
+    padding-left: 80px;
+    h2 {
+        overflow: hidden;
+        padding-bottom: 20px;
+        font-weight: 700;
+        color: #222;
+        
+    }
+    .image {
+        width: 535px;
+
+        img {
+            width: 100%;
+            object-fit: contain;
+            border-radius: 15px;
+        }
+    }
+
+
+    .slick-slider {
+        overflow: hidden;
+        position: static;
+
+        .slick-prev,
+        .slick-next {
+            background: transparent;
+        }
+
+
+        .slick-prev:before,
+        .slick-next:before {
+            font-family: 'slick';
+            font-size: 20px;
+            line-height: 1;
+            opacity: 1;
+            color: #239698;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+
+        .slick-prev {
+            position: absolute;
+            top: 40px;
+            right: 187px !important;
+            left: inherit !important;
+        }
+
+        .slick-next {
+            position: absolute;
+            display: block;
+            right: 158px;
+            top: 40px;
+        }
+    }
+}

@@ -6,7 +6,7 @@ function Specialy() {
     return (
         <div className="spe">
             <div className="img">
-                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/banner/1.jpg" alt="" />
+                <img src="https://themes.pixelstrap.com/fastkart/assets/images/grocery/banner/1.jpg" alt=""  draggable="false"/>
             </div>
             <div class="container-fluid-lg">
                 <div>

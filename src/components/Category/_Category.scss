@@ -1,6 +1,8 @@
 .category {
-    padding: 80px;
-
+    margin-top: 40px;
+    padding-right: 80px;
+    padding-left: 80px;
+    overflow: hidden;
     h2 {
         overflow: hidden;
         padding-bottom: 20px;
@@ -102,5 +104,44 @@
             }
         }
 
+    }
+
+
+    .slick-slider {
+        overflow: hidden;
+        position: static;
+
+        .slick-prev,
+        .slick-next {
+            background: transparent;
+        }
+
+
+        .slick-prev:before, .slick-next:before {
+            font-family: 'slick';
+            font-size: 20px;
+            line-height: 1;
+            opacity: 1;
+            color: white;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+
+        .slick-prev {
+            background: #239698;
+            top: 40px;
+            position: absolute;
+            right: 187px !important;
+            left: inherit !important;
+        }
+
+        .slick-next {
+            background: #239698;
+            position: absolute;
+            display: block;
+            right: 158px;
+            top: 40px;
+        }
     }
 }
