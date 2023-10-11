@@ -1,0 +1,168 @@
+.login {
+    .caption {
+        background-color: #f8f8f8;
+
+        color: #4a5568;
+
+        .title {
+            padding: 30px 80px;
+
+            .tit {
+                p {
+                    font-weight: bold;
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .icon-word {
+            display: flex;
+            padding: 38px 20px;
+
+            .icon {
+                a {
+                    color: #4a5568;
+                    text-decoration: none;
+                }
+            }
+
+
+            .log {
+                font-weight: 500;
+
+                svg {
+                    margin: 0 4px;
+                }
+            }
+        }
+    }
+
+    .image-logIn {
+        background-image: url("https://themes.pixelstrap.com/fastkart/assets/images/inner-page/log-in-bg.png");
+        background-repeat: no-repeat;
+
+        .image {
+
+            margin-top: 40px;
+
+            img {
+                float: right;
+                margin: 0 40px;
+            }
+        }
+
+        .signIn {
+            width: 60%;
+            background-color: #f8f8f8;
+            border-radius: 12px;
+            margin: 25px 0 30px 0;
+            padding: 20px 25px;
+
+            .title {
+                .head3 {
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #4a5568;
+                }
+
+                .par {
+                    color: #4a5568;
+                }
+            }
+
+            .form {
+                form {
+                    .text {
+                        text-align: center;
+                        width: 95%;
+                        margin: 15px;
+                        padding: 10px 0 10px 10px;
+                        border: 1px solid #adb7c9;
+                        outline: none;
+                    }
+
+                    .remember {
+                        input {
+                            margin: 0 6px 0 14px;
+                        }
+                    }
+
+                    .account-forgot {
+                        display: inline-block;
+                        font-weight: 500;
+                        float: right;
+
+                        a {
+                            color: #0da487;
+                            text-decoration: none;
+                        }
+                    }
+
+                    .button {
+                        margin: 15px;
+
+                        button {
+                            width: 100%;
+                            background-color: #ff6b6b;
+                            border: 1px solid #ff6b6b;
+                            transition: .3s;
+
+                            &:hover {
+                                background-color: #e55757;
+                            }
+                        }
+                    }
+                }
+
+                .google-facebook {
+                    .or {
+                        text-align: center;
+                        color: #4a5568;
+                        font-weight: 500;
+
+                    }
+
+                    .LoginWith {
+                        display: flex;
+                        justify-content: center;
+                        margin: 10px 0;
+                        padding: 14px 0 7px 0;
+                        border-radius: 10px;
+                        background-color: white;
+
+                        .icon {
+                            margin: 0 10px;
+
+                            svg {
+                                color: #0da487;
+                            }
+                        }
+
+                        .with {
+                            p {
+                                margin-top: 1px;
+                                font-weight: 500;
+                                color: #4a5568;
+                            }
+                        }
+                    }
+                }
+
+                .forgot {
+                    margin-top: 15px;
+                    text-align: center;
+
+                    p {
+                        color: #4a5568;
+
+                        a {
+                            font-weight: 500;
+                            color: #0da487;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
