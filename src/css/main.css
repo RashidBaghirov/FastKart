@@ -1332,6 +1332,10 @@
 .allhead .down .nav ul li {
   font-size: 22px;
 }
+.allhead .down .nav ul li a {
+  text-decoration: none;
+  color: black;
+}
 .allhead .down .icons {
   list-style: none;
   display: flex;
@@ -1584,6 +1588,208 @@
   font-weight: 500;
   color: #0da487;
   text-decoration: none;
+}
+
+.shop .caption {
+  background-color: #f8f8f8;
+  color: #4a5568;
+}
+.shop .caption .title {
+  padding: 30px 80px;
+}
+.shop .caption .title .tit p {
+  font-weight: bold;
+  font-size: 25px;
+}
+.shop .caption .icon-word {
+  display: flex;
+  padding: 38px 20px;
+}
+.shop .caption .icon-word .icon a {
+  color: #4a5568;
+  text-decoration: none;
+}
+.shop .caption .icon-word .log {
+  font-weight: 500;
+}
+.shop .caption .icon-word .log svg {
+  margin: 0 4px;
+}
+.shop .cat_cont {
+  position: relative;
+  height: 100vh;
+  overflow-y: auto;
+}
+.shop .cat_cont .categories {
+  position: sticky;
+  top: 20px;
+  z-index: 1;
+}
+.shop .cat_cont .categories .nav_ul .nav-item {
+  width: 100%;
+  height: 65px;
+  background-color: #f7f6f3;
+  border-radius: 6px;
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 10px;
+  transition: 0.6s all;
+  border-radius: 5px;
+}
+.shop .cat_cont .categories .nav_ul .nav-item .nav-link {
+  width: 100%;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 500;
+  color: #222;
+  border-radius: unset;
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+  padding: 15px;
+}
+.shop .cat_cont .categories .nav_ul .nav-item .nav-link img {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  right: 10px;
+  opacity: 0.1;
+  transition: all 0.3s ease-in-out;
+}
+.shop .cat_cont .categories .nav_ul .nav-item .nav-link:hover img {
+  width: 75px;
+  height: 75px;
+  transform: translateY(-50%) rotate(-4deg);
+  right: 10px;
+  opacity: 0.29;
+}
+.shop .cat_cont .categories .nav_ul .green {
+  background-color: #239698;
+}
+.shop .cat_cont .categories .nav_ul .green .nav-link {
+  color: white;
+}
+.shop .cat_cont .categories .nav_ul .green .nav-link img {
+  width: 75px;
+  height: 75px;
+  transform: translateY(-50%) rotate(-4deg);
+  right: 10px;
+  opacity: 0.29;
+}
+.shop .product {
+  background-color: #f8f8f8;
+  position: relative;
+  transition: 0.6s;
+  margin: 15px 0;
+}
+.shop .product:hover .image img {
+  transform: scale(1.1);
+}
+.shop .product:hover .hover {
+  visibility: visible;
+  opacity: 1;
+}
+.shop .product:hover .hover ul {
+  height: 100%;
+}
+.shop .product .image {
+  text-align: center;
+  padding: 25px;
+  height: 164px;
+  overflow: visible;
+}
+.shop .product .image img {
+  transition: 0.3s;
+  margin: 0 auto;
+}
+.shop .product .hover {
+  transition: 1s;
+  position: absolute;
+  bottom: 238px;
+  left: 23px;
+  visibility: hidden;
+  opacity: 0;
+}
+.shop .product .hover ul {
+  height: 0;
+  display: flex;
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+}
+.shop .product .hover ul li {
+  padding: 6px 26px;
+  color: #4a5568;
+}
+.shop .product .hover ul li:nth-child(even) {
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+}
+.shop .product .proInfo {
+  margin-left: 10px;
+}
+.shop .product .proInfo p {
+  padding: 0;
+  margin: 3px;
+  color: #4a5568;
+}
+.shop .product .proInfo .proName {
+  font-size: 18px;
+}
+.shop .product .proInfo .proName a {
+  color: black;
+  text-decoration: none;
+}
+.shop .product .value {
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.shop .product .value svg {
+  color: #ffb321;
+  padding: 0 2px;
+}
+.shop .product .value span {
+  color: #4a5568;
+  margin-left: 8px;
+  font-size: 14px;
+}
+.shop .product .gram-price {
+  margin: 0;
+  margin-left: 10px;
+}
+.shop .product .gram-price p {
+  margin: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #4a5568;
+}
+.shop .product .gram-price .disPrice {
+  font-size: 18px;
+  color: #0da487;
+}
+.shop .product .gram-price .price {
+  text-decoration: line-through;
+}
+.shop .product .addCount {
+  text-align: center;
+  border-radius: 25px;
+  background-color: white;
+  margin: 10px;
+}
+.shop .product .addCount .add {
+  width: 100%;
+  border: none;
+  color: #4a5568;
+}
+.shop .product .addCount .add:hover {
+  color: #0da487;
+  font-weight: 500;
+  background-color: white;
 }
 
 * {

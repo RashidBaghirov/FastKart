@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { connect } from 'react-redux';
+function AllHeader(props) {
 
-function AllHeader() {
     return (
         <>
             <header className="allhead">
@@ -80,14 +81,14 @@ function AllHeader() {
                                             </Link>
                                         </li>
                                         <li className="bag">
-                                            <Link className="bag_icon">
+                                            <Link to='/shopcart' className="bag_icon">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
                                                     <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
                                                 </svg>
 
                                             </Link>
                                             <div className="count_bag">
-                                                <small>0</small>
+                                                <small>{props.cartItemCount}</small>
                                             </div>
                                         </li>
 
@@ -122,73 +123,73 @@ function AllHeader() {
                                     <span>All Categories</span>
                                 </button>
                                 <div class="category-dropdown">
-                            <ul class="category-list">
-                                <li class="onhover-category-list">
-                                    <Link class="category-name">
-                                        <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/vegetable.svg" alt="" />
-                                        <h6>Vegetables  Fruit</h6>
-                                    </Link>
+                                    <ul class="category-list">
+                                        <li class="onhover-category-list">
+                                            <Link class="category-name">
+                                                <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/vegetable.svg" alt="" />
+                                                <h6>Vegetables  Fruit</h6>
+                                            </Link>
 
 
-                                </li>
+                                        </li>
 
-                                <li class="onhover-category-list">
-                                    <Link class="category-name">
-                                        <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/cup.svg" alt="" />
-                                        <h6>Beverages</h6>
-                                    </Link>
-
-
-                                </li>
-
-                                <li class="onhover-category-list">
-                                    <Link class="category-name">
-                                        <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/meats.svg" alt="" />
-                                        <h6>Meats  Seafood</h6>
-                                    </Link>
+                                        <li class="onhover-category-list">
+                                            <Link class="category-name">
+                                                <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/cup.svg" alt="" />
+                                                <h6>Beverages</h6>
+                                            </Link>
 
 
-                                </li>
+                                        </li>
 
-                                <li class="onhover-category-list">
-                                    <Link class="category-name">
-                                        <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/breakfast.svg" alt="" />
-                                        <h6>Breakfast  Dairy</h6>
-                                    </Link>
-
-
-                                </li>
-
-                                <li class="onhover-category-list">
-                                    <Link class="category-name">
-                                        <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/frozen.svg" alt="" />
-                                        <h6>Frozen Foods</h6>
-                                    </Link>
+                                        <li class="onhover-category-list">
+                                            <Link class="category-name">
+                                                <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/meats.svg" alt="" />
+                                                <h6>Meats  Seafood</h6>
+                                            </Link>
 
 
-                                </li>
+                                        </li>
 
-                                <li class="onhover-category-list">
-                                    <Link class="category-name">
-                                        <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/biscuit.svg" alt="" />
-                                        <h6>Biscuits  Snacks</h6>
-                                    </Link>
-
-
-                                </li>
-
-                                <li class="onhover-category-list">
-                                    <Link class="category-name">
-                                        <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/grocery.svg" alt="" />
-                                        <h6>Grocery  Staples</h6>
-                                    </Link>
+                                        <li class="onhover-category-list">
+                                            <Link class="category-name">
+                                                <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/breakfast.svg" alt="" />
+                                                <h6>Breakfast  Dairy</h6>
+                                            </Link>
 
 
-                                </li>
-                            </ul>
+                                        </li>
+
+                                        <li class="onhover-category-list">
+                                            <Link class="category-name">
+                                                <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/frozen.svg" alt="" />
+                                                <h6>Frozen Foods</h6>
+                                            </Link>
 
 
-                        </div>
+                                        </li>
+
+                                        <li class="onhover-category-list">
+                                            <Link class="category-name">
+                                                <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/biscuit.svg" alt="" />
+                                                <h6>Biscuits  Snacks</h6>
+                                            </Link>
+
+
+                                        </li>
+
+                                        <li class="onhover-category-list">
+                                            <Link class="category-name">
+                                                <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/grocery.svg" alt="" />
+                                                <h6>Grocery  Staples</h6>
+                                            </Link>
+
+
+                                        </li>
+                                    </ul>
+
+
+                                </div>
 
                             </div>
                         </div>
@@ -196,10 +197,15 @@ function AllHeader() {
                             <div className="nav">
                                 <ul>
                                     <li>
-                                        Home
+                                        <Link to="/">
+                                            Home
+                                        </Link>
                                     </li>
                                     <li>
-                                        Shop
+                                        <Link to="/shop">
+                                            Shop
+                                        </Link>
+
                                     </li>
                                     <li>
                                         Product
@@ -218,7 +224,7 @@ function AllHeader() {
                                 <img src="/image/Screenshot 2023-10-11 161108.png" alt="" />
                             </div>
                         </div>
-                  
+
                     </div>
                 </div>
             </header>
@@ -226,4 +232,10 @@ function AllHeader() {
     );
 }
 
-export default AllHeader;
+const mapStateToProps = (state) => {
+    return {
+        cartItemCount: state.cart.cartItems.length,
+    };
+};
+
+export default connect(mapStateToProps)(AllHeader);
