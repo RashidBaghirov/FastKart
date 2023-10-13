@@ -16,8 +16,8 @@ function ShopCm(props) {
                 vit: "Vegetable",
                 name: "Fresh Bread and Pastry Flour 200 g",
                 gram: "250 g",
-                disPrice: "$08.02",
-                price: "$15.15",
+                disPrice: "08.02",
+                price: "15.15",
             },
             {
                 id: 2,
@@ -25,8 +25,8 @@ function ShopCm(props) {
                 vit: "Vegetable",
                 name: "Peanut Butter Bite Premium Butter Cookies",
                 gram: "250 g",
-                disPrice: "$08.02",
-                price: "$15.15",
+                disPrice: "08.02",
+                price: "15.15",
             },
             {
                 id: 3,
@@ -34,8 +34,8 @@ function ShopCm(props) {
                 vit: "Vegetable",
                 name: "SnackAmor Combo Pack of Jowar Stick and Jowar",
                 gram: "250 g",
-                disPrice: "$08.02",
-                price: "$15.15",
+                disPrice: "08.02",
+                price: "15.15",
             },
             {
                 id: 4,
@@ -43,8 +43,8 @@ function ShopCm(props) {
                 vit: "Vegetable",
                 name: "Yumitos Chilli Sprinkled Potato Chips 100 g",
                 gram: "250 g",
-                disPrice: "$08.02",
-                price: "$15.15",
+                disPrice: "08.02",
+                price: "15.15",
             },
             {
                 id: 5,
@@ -52,8 +52,8 @@ function ShopCm(props) {
                 vit: "Vegetable",
                 name: "Fresh Bread and Pastry Flour 200 g",
                 gram: "250 g",
-                disPrice: "$08.02",
-                price: "$15.15",
+                disPrice: "08.02",
+                price: "15.15",
             },
             {
                 id: 6,
@@ -61,8 +61,8 @@ function ShopCm(props) {
                 vit: "Vegetable",
                 name: "Fresh Bread and Pastry Flour 200 g",
                 gram: "250 g",
-                disPrice: "$08.02",
-                price: "$15.15",
+                disPrice: "08.02",
+                price: "15.15",
             },
             {
                 id: 7,
@@ -70,8 +70,8 @@ function ShopCm(props) {
                 vit: "Vegetable",
                 name: "Fresh Bread and Pastry Flour 200 g",
                 gram: "250 g",
-                disPrice: "$08.02",
-                price: "$15.15",
+                disPrice: "08.02",
+                price: "15.15",
             },
             {
                 id: 8,
@@ -79,8 +79,8 @@ function ShopCm(props) {
                 vit: "Vegetable",
                 name: "Fresh Bread and Pastry Flour 200 g",
                 gram: "250 g",
-                disPrice: "$08.02",
-                price: "$15.15",
+                disPrice: "08.02",
+                price: "15.15",
             },
         ];
 
@@ -185,8 +185,8 @@ function ShopCm(props) {
                         </div>
                     </div>
                     <div className="row p-5">
-                        <div className="col-3">
-                            <div className="cat_cont">
+                        <div className="col-3 ">
+                            <div className="cat_cont p-sticky">
                                 <div className="categories">
                                     <ul className="nav_ul">
                                         {category.map((cat) => (
