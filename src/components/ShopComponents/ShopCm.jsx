@@ -210,7 +210,7 @@ function ShopCm(props) {
                                     <div className="col-3">
                                         <div className="product">
                                             <div className="image">
-                                                <Link>
+                                                <Link to={`/shop/detail/${shop.id}`}>
                                                     <img src={shop.img} alt="product" />
                                                 </Link>
                                             </div>

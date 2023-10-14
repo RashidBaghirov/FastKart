@@ -1,0 +1,512 @@
+#Detail {
+    .capp {
+        background-color: #f8f8f8;
+
+        .title {
+            padding: 30px 80px;
+
+            .tit {
+                p {
+                    font-weight: bold;
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .icon-word {
+            display: flex;
+            padding: 38px 40px;
+
+            .icon {
+                a {
+                    color: #4a5568;
+                    text-decoration: none;
+                }
+            }
+
+
+            .log {
+                font-weight: 500;
+
+                svg {
+                    margin: 0 8px;
+                }
+            }
+        }
+    }
+
+    .detail {
+        overflow: hidden;
+        margin-top: 50px;
+
+        .col {
+            overflow: hidden;
+        }
+
+        .slick {
+            overflow: hidden;
+
+            img {
+                width: 400px;
+            }
+        }
+
+        .slick-slider .slick-track,
+        .slick-slider .slick-list {
+            overflow: hidden;
+        }
+
+        .slick-slider {
+            overflow: hidden;
+        }
+
+        .detail-info {
+            .percentage {
+                width: 16%;
+                height: 40px;
+                overflow: hidden;
+                padding: 8px 12px;
+                background-color: #ffeded;
+                border-radius: 6px;
+
+                p {
+                    font-weight: 500;
+                    color: #ff7171;
+                }
+            }
+
+            .name-price-info {
+                margin-bottom: 15px;
+                border-bottom: 1px solid lightgrey;
+
+                .title {
+                    font-size: 22px;
+                    font-weight: 500;
+                    margin: 0;
+                }
+
+                .price {
+                    color: #0da487;
+                    font-size: 24px;
+                    margin: 0;
+                    display: flex;
+                    font-weight: 500;
+
+                    p {
+                        color: #4a5568;
+                        font-size: 15px;
+                        font-weight: 500;
+                    }
+
+                    .realPrice {
+                        margin-left: 10px;
+                        margin-top: 8px;
+                        font-size: 15px;
+                        text-decoration: line-through;
+                    }
+
+                    .price-percentage {
+                        margin-left: 6px;
+                        margin-top: 5px;
+
+                        color: #0da487;
+                        font-weight: 500;
+                        font-size: 17px;
+                    }
+
+                    .starts {
+                        margin-left: 60px;
+                        margin-top: 2px;
+                        font-size: 17px;
+
+                        svg {
+                            color: #ffb321;
+                        }
+
+                        span {
+                            margin-left: 10px;
+                            font-size: 13px;
+                        }
+                    }
+                }
+
+                .info {
+                    width: 70%;
+                    color: #4a5568;
+                    font-weight: 420;
+                }
+            }
+
+            .weight-time-info {
+                form {
+                    .title {
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: #4a5568;
+                    }
+
+                    .button {
+                        button {
+                            color: #4a5568;
+                            background-color: transparent;
+                            margin: 0 5px;
+                            border: 1px solid #0da487;
+                        }
+
+                        .green {
+                            background-color: #0da487;
+                            color: white;
+                        }
+                    }
+
+                    .count-add {
+                        margin-top: 18px;
+                        display: flex;
+
+                        .quantity-price {
+                            width: 34%;
+                            background-color: #f8f8f8;
+                            border-radius: 4px;
+                            overflow: hidden;
+                            .input-group {
+                                position: relative;
+                                display: flex;
+                                flex-wrap: wrap;
+                                align-items: stretch;
+                                width: 100%;
+                                overflow: hidden;
+                                button {
+                                    background-color: white;
+                                    width: calc(29px + (35 - 29) * ((100vw - 320px) / (1920 - 320)));
+                                    height: calc(29px + (35 - 29) * ((100vw - 320px) / (1920 - 320)));
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    border: none;
+                                    padding: 0;
+                                    margin-top: 2px;
+                                    color: #0da487;
+
+                                    svg {
+                                        padding-top: 3px;
+                                    }
+                                }
+
+                                input {
+                                    width: 1%;
+                                    border: none;
+                                    background-color: transparent;
+                                    text-align: center;
+                                }
+
+                                .qty-left-minus {
+                                    position: absolute;
+                                    left: 0;
+                                }
+
+                                .qty-right-plus {
+                                    position: absolute;
+                                    right: 0;
+                                }
+                            }
+
+
+                        }
+
+                        .addBtn {
+                            width: 100%;
+                            margin-left: 25px;
+
+                            button {
+                                width: 90%;
+                            }
+                        }
+                    }
+                }
+
+                .heart-compare {
+                    margin-top: 15px;
+                    color: #4a5568;
+                    padding-bottom: 15px;
+                    border-bottom: 1px solid lightgray;
+
+                    span {
+                        margin: 0 10px;
+                        cursor: pointer;
+                    }
+                }
+
+
+            }
+
+            .store-info {
+                margin: 12px 0;
+
+                .title {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+
+                .text {
+                    width: 74%;
+                }
+
+                .pro-info {
+                    border-bottom: 1px solid lightgray;
+
+                    ul {
+                        background-color: #f9f9f9;
+                        list-style: circle;
+                        width: 60%;
+                        border-radius: 10px;
+                        padding: 17px;
+
+                        li {
+                            list-style: circle;
+                            font-weight: 500;
+                            color: #4a5568;
+
+                            span {
+                                color: rgb(175, 175, 175);
+                            }
+                        }
+                    }
+                }
+
+                .checkOut {
+                    margin: 15px 0;
+
+                    p {
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+
+                    .cards {
+                        img {
+                            margin: 0 5px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        .descripton {
+            margin-top: 20px;
+
+            .titleDesc {
+                border-top: 3px solid #0da487;
+
+                .title {
+                    margin-top: 10px;
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+            }
+
+            .text {
+                font-size: 15px;
+                font-weight: 400;
+                color: #4a5568;
+            }
+
+            .orc {
+                font-weight: 500;
+            }
+
+            .image {
+                background-image: url("https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/14.jpg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+
+                .info {
+                    text-align: center;
+
+                    .summer {
+                        letter-spacing: 10px;
+                        color: #0da487;
+                        font-weight: 500;
+                        margin: 0;
+                    }
+
+                    .veg {
+                        margin: 0;
+                        font-size: 35px;
+                        font-weight: 600;
+                        letter-spacing: 4px;
+                    }
+
+                    .save {
+                        color: #4a5568;
+                    }
+                }
+            }
+        }
+
+        .right-info {
+            background-color: #f8f8f8;
+            padding: 24px;
+            margin: 15px 0;
+            border-radius: 15px;
+
+            .image-stars {
+                background-color: white;
+                padding: 10px 15px;
+
+                .image {
+                    img {
+                        width: 60px;
+                    }
+                }
+
+                .text-stars {
+
+                    .starts {
+                        svg {
+                            color: #ffb321;
+                        }
+
+                        span {
+                            margin-left: 5px;
+                            font-size: 12px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+
+            .noodle-info {
+                margin-top: 16px;
+                margin-left: 5px;
+                color: #4a5568;
+                font-size: 15px;
+                font-weight: 400;
+
+                .nood {
+                    padding-bottom: 15px;
+                    border-bottom: 1px solid lightgray;
+                }
+
+                .address-contact {
+                    .icon-info {
+                        margin: 10px 0;
+                        display: flex;
+
+                        .icon {
+                            margin-right: 8px;
+                            color: #0da487;
+                        }
+
+                        .info {
+                            p {
+                                margin: 0;
+                                font-weight: bold;
+                            }
+
+                            .addrs {
+                                font-weight: 400;
+                                color: gray;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .title-products {
+                .title {
+                    p {
+                        font-size: 18px;
+                        font-weight: 500;
+                        margin-bottom: 8px;
+                    }
+
+                    // margin: 0;
+                    width: 80%;
+                    border-bottom: 2px solid #0da487;
+                }
+
+                .products {
+                    margin-top: 15px;
+
+                    .image-name-price {
+                        display: flex;
+
+                        .image {
+                            margin-right: 20px;
+                            margin-top: 14px;
+
+                            img {
+                                width: 67px;
+                            }
+                        }
+
+                        .name-gr-pr {
+                            margin: 16px 0;
+
+                            p {
+                                font-weight: 500;
+                                font-size: 15px;
+                                margin-top: 0;
+                                margin-bottom: 3px;
+                            }
+
+                            .gram {
+                                font-weight: 400;
+                                color: gray;
+                            }
+
+                            .price {
+                                color: #0da487;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .titles {
+                margin-top: 40px;
+
+                p {
+                    padding: 0;
+                    margin: 0;
+                }
+
+                .title1 {
+                    color: #ffb321;
+                    font-weight: 500;
+                }
+
+                .title2 {
+                    color: #0da487;
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+
+                .title3 {
+                    font-size: 32px;
+                    color: #4a5568;
+                }
+
+                .title4 {
+                    font-size: 25px;
+                }
+
+
+            }
+
+
+        }
+
+        .imageRight {
+            height: 570px;
+            background-image: url("https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/8.jpg");
+            background-repeat: no-repeat;
+        }
+    }
+}

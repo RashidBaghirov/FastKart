@@ -2113,6 +2113,10 @@
   justify-content: center;
   align-items: center;
 }
+.cart .summery-box .button-group.cart-button ul li .shopping-button a {
+  text-decoration: none;
+  color: #000;
+}
 
 thead,
 tbody,
@@ -2123,6 +2127,393 @@ th {
   border-color: inherit;
   border-style: solid;
   border-width: 0;
+}
+
+#Detail .capp {
+  background-color: #f8f8f8;
+}
+#Detail .capp .title {
+  padding: 30px 80px;
+}
+#Detail .capp .title .tit p {
+  font-weight: bold;
+  font-size: 25px;
+}
+#Detail .capp .icon-word {
+  display: flex;
+  padding: 38px 40px;
+}
+#Detail .capp .icon-word .icon a {
+  color: #4a5568;
+  text-decoration: none;
+}
+#Detail .capp .icon-word .log {
+  font-weight: 500;
+}
+#Detail .capp .icon-word .log svg {
+  margin: 0 8px;
+}
+#Detail .detail {
+  overflow: hidden;
+  margin-top: 50px;
+}
+#Detail .detail .col {
+  overflow: hidden;
+}
+#Detail .detail .slick {
+  overflow: hidden;
+}
+#Detail .detail .slick img {
+  width: 400px;
+}
+#Detail .detail .slick-slider .slick-track,
+#Detail .detail .slick-slider .slick-list {
+  overflow: hidden;
+}
+#Detail .detail .slick-slider {
+  overflow: hidden;
+}
+#Detail .detail .detail-info .percentage {
+  width: 16%;
+  height: 40px;
+  overflow: hidden;
+  padding: 8px 12px;
+  background-color: #ffeded;
+  border-radius: 6px;
+}
+#Detail .detail .detail-info .percentage p {
+  font-weight: 500;
+  color: #ff7171;
+}
+#Detail .detail .detail-info .name-price-info {
+  margin-bottom: 15px;
+  border-bottom: 1px solid lightgrey;
+}
+#Detail .detail .detail-info .name-price-info .title {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0;
+}
+#Detail .detail .detail-info .name-price-info .price {
+  color: #0da487;
+  font-size: 24px;
+  margin: 0;
+  display: flex;
+  font-weight: 500;
+}
+#Detail .detail .detail-info .name-price-info .price p {
+  color: #4a5568;
+  font-size: 15px;
+  font-weight: 500;
+}
+#Detail .detail .detail-info .name-price-info .price .realPrice {
+  margin-left: 10px;
+  margin-top: 8px;
+  font-size: 15px;
+  text-decoration: line-through;
+}
+#Detail .detail .detail-info .name-price-info .price .price-percentage {
+  margin-left: 6px;
+  margin-top: 5px;
+  color: #0da487;
+  font-weight: 500;
+  font-size: 17px;
+}
+#Detail .detail .detail-info .name-price-info .price .starts {
+  margin-left: 60px;
+  margin-top: 2px;
+  font-size: 17px;
+}
+#Detail .detail .detail-info .name-price-info .price .starts svg {
+  color: #ffb321;
+}
+#Detail .detail .detail-info .name-price-info .price .starts span {
+  margin-left: 10px;
+  font-size: 13px;
+}
+#Detail .detail .detail-info .name-price-info .info {
+  width: 70%;
+  color: #4a5568;
+  font-weight: 420;
+}
+#Detail .detail .detail-info .weight-time-info form .title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #4a5568;
+}
+#Detail .detail .detail-info .weight-time-info form .button button {
+  color: #4a5568;
+  background-color: transparent;
+  margin: 0 5px;
+  border: 1px solid #0da487;
+}
+#Detail .detail .detail-info .weight-time-info form .button .green {
+  background-color: #0da487;
+  color: white;
+}
+#Detail .detail .detail-info .weight-time-info form .count-add {
+  margin-top: 18px;
+  display: flex;
+}
+#Detail .detail .detail-info .weight-time-info form .count-add .quantity-price {
+  width: 34%;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  overflow: hidden;
+}
+#Detail .detail .detail-info .weight-time-info form .count-add .quantity-price .input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+  overflow: hidden;
+}
+#Detail .detail .detail-info .weight-time-info form .count-add .quantity-price .input-group button {
+  background-color: white;
+  width: calc(29px + 6 * (100vw - 320px) / 1600);
+  height: calc(29px + 6 * (100vw - 320px) / 1600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0;
+  margin-top: 2px;
+  color: #0da487;
+}
+#Detail .detail .detail-info .weight-time-info form .count-add .quantity-price .input-group button svg {
+  padding-top: 3px;
+}
+#Detail .detail .detail-info .weight-time-info form .count-add .quantity-price .input-group input {
+  width: 1%;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+}
+#Detail .detail .detail-info .weight-time-info form .count-add .quantity-price .input-group .qty-left-minus {
+  position: absolute;
+  left: 0;
+}
+#Detail .detail .detail-info .weight-time-info form .count-add .quantity-price .input-group .qty-right-plus {
+  position: absolute;
+  right: 0;
+}
+#Detail .detail .detail-info .weight-time-info form .count-add .addBtn {
+  width: 100%;
+  margin-left: 25px;
+}
+#Detail .detail .detail-info .weight-time-info form .count-add .addBtn button {
+  width: 90%;
+}
+#Detail .detail .detail-info .weight-time-info .heart-compare {
+  margin-top: 15px;
+  color: #4a5568;
+  padding-bottom: 15px;
+  border-bottom: 1px solid lightgray;
+}
+#Detail .detail .detail-info .weight-time-info .heart-compare span {
+  margin: 0 10px;
+  cursor: pointer;
+}
+#Detail .detail .detail-info .store-info {
+  margin: 12px 0;
+}
+#Detail .detail .detail-info .store-info .title {
+  font-size: 20px;
+  font-weight: 500;
+}
+#Detail .detail .detail-info .store-info .text {
+  width: 74%;
+}
+#Detail .detail .detail-info .store-info .pro-info {
+  border-bottom: 1px solid lightgray;
+}
+#Detail .detail .detail-info .store-info .pro-info ul {
+  background-color: #f9f9f9;
+  list-style: circle;
+  width: 60%;
+  border-radius: 10px;
+  padding: 17px;
+}
+#Detail .detail .detail-info .store-info .pro-info ul li {
+  list-style: circle;
+  font-weight: 500;
+  color: #4a5568;
+}
+#Detail .detail .detail-info .store-info .pro-info ul li span {
+  color: rgb(175, 175, 175);
+}
+#Detail .detail .detail-info .store-info .checkOut {
+  margin: 15px 0;
+}
+#Detail .detail .detail-info .store-info .checkOut p {
+  font-size: 18px;
+  font-weight: 500;
+}
+#Detail .detail .detail-info .store-info .checkOut .cards img {
+  margin: 0 5px;
+  cursor: pointer;
+}
+#Detail .detail .descripton {
+  margin-top: 20px;
+}
+#Detail .detail .descripton .titleDesc {
+  border-top: 3px solid #0da487;
+}
+#Detail .detail .descripton .titleDesc .title {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 500;
+}
+#Detail .detail .descripton .text {
+  font-size: 15px;
+  font-weight: 400;
+  color: #4a5568;
+}
+#Detail .detail .descripton .orc {
+  font-weight: 500;
+}
+#Detail .detail .descripton .image {
+  background-image: url("https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/14.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#Detail .detail .descripton .image .info {
+  text-align: center;
+}
+#Detail .detail .descripton .image .info .summer {
+  letter-spacing: 10px;
+  color: #0da487;
+  font-weight: 500;
+  margin: 0;
+}
+#Detail .detail .descripton .image .info .veg {
+  margin: 0;
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+#Detail .detail .descripton .image .info .save {
+  color: #4a5568;
+}
+#Detail .detail .right-info {
+  background-color: #f8f8f8;
+  padding: 24px;
+  margin: 15px 0;
+  border-radius: 15px;
+}
+#Detail .detail .right-info .image-stars {
+  background-color: white;
+  padding: 10px 15px;
+}
+#Detail .detail .right-info .image-stars .image img {
+  width: 60px;
+}
+#Detail .detail .right-info .image-stars .text-stars .starts svg {
+  color: #ffb321;
+}
+#Detail .detail .right-info .image-stars .text-stars .starts span {
+  margin-left: 5px;
+  font-size: 12px;
+  font-weight: 500;
+}
+#Detail .detail .right-info .noodle-info {
+  margin-top: 16px;
+  margin-left: 5px;
+  color: #4a5568;
+  font-size: 15px;
+  font-weight: 400;
+}
+#Detail .detail .right-info .noodle-info .nood {
+  padding-bottom: 15px;
+  border-bottom: 1px solid lightgray;
+}
+#Detail .detail .right-info .noodle-info .address-contact .icon-info {
+  margin: 10px 0;
+  display: flex;
+}
+#Detail .detail .right-info .noodle-info .address-contact .icon-info .icon {
+  margin-right: 8px;
+  color: #0da487;
+}
+#Detail .detail .right-info .noodle-info .address-contact .icon-info .info p {
+  margin: 0;
+  font-weight: bold;
+}
+#Detail .detail .right-info .noodle-info .address-contact .icon-info .info .addrs {
+  font-weight: 400;
+  color: gray;
+}
+#Detail .detail .right-info .title-products .title {
+  width: 80%;
+  border-bottom: 2px solid #0da487;
+}
+#Detail .detail .right-info .title-products .title p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+#Detail .detail .right-info .title-products .products {
+  margin-top: 15px;
+}
+#Detail .detail .right-info .title-products .products .image-name-price {
+  display: flex;
+}
+#Detail .detail .right-info .title-products .products .image-name-price .image {
+  margin-right: 20px;
+  margin-top: 14px;
+}
+#Detail .detail .right-info .title-products .products .image-name-price .image img {
+  width: 67px;
+}
+#Detail .detail .right-info .title-products .products .image-name-price .name-gr-pr {
+  margin: 16px 0;
+}
+#Detail .detail .right-info .title-products .products .image-name-price .name-gr-pr p {
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 3px;
+}
+#Detail .detail .right-info .title-products .products .image-name-price .name-gr-pr .gram {
+  font-weight: 400;
+  color: gray;
+}
+#Detail .detail .right-info .title-products .products .image-name-price .name-gr-pr .price {
+  color: #0da487;
+}
+#Detail .detail .right-info .titles {
+  margin-top: 40px;
+}
+#Detail .detail .right-info .titles p {
+  padding: 0;
+  margin: 0;
+}
+#Detail .detail .right-info .titles .title1 {
+  color: #ffb321;
+  font-weight: 500;
+}
+#Detail .detail .right-info .titles .title2 {
+  color: #0da487;
+  font-size: 30px;
+  font-weight: bold;
+}
+#Detail .detail .right-info .titles .title3 {
+  font-size: 32px;
+  color: #4a5568;
+}
+#Detail .detail .right-info .titles .title4 {
+  font-size: 25px;
+}
+#Detail .detail .imageRight {
+  height: 570px;
+  background-image: url("https://themes.pixelstrap.com/fastkart/assets/images/vegetable/banner/8.jpg");
+  background-repeat: no-repeat;
 }
 
 * {

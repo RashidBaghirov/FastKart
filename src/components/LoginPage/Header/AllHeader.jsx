@@ -208,7 +208,9 @@ function AllHeader(props) {
 
                                     </li>
                                     <li>
-                                        Product
+                                        <Link to={`/shop/detail/${1}`}>
+                                            Product
+                                        </Link>
                                     </li>
                                     <li>
                                         Mega Menu
