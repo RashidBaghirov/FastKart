@@ -1,17 +1,15 @@
 import React from "react";
 import AllFooter from "../components/LoginPage/Footer/AllFooter";
 import AllHeader from "../components/LoginPage/Header/AllHeader";
-import CartCm from "../components/Cartcomponent/CartCm";
+import AboutCM from "../components/AboutsCM/AboutCm";
 import Sticky from "../components/StickyNav/Sticky";
 
-function Cart() {
+function About() {
     return (
         <>
             <AllHeader />
-            <CartCm />
+            <AboutCM />
             <Sticky />
-
-
             <AllFooter />
 
         </>
@@ -19,4 +17,4 @@ function Cart() {
 }
 
 
-export default Cart;
+export default About;

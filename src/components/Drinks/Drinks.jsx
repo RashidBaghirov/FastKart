@@ -12,67 +12,75 @@ const Drinks = () => {
     const fakeApiData = [
       {
         id: 1,
-        image:
-          "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/drink/1.png",
-        title: "Redd Bull",
+        img:
+          "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/personal-care/1.png",
+        name: "Redd Bull",
+        vit: "Drinks",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
       {
         id: 2,
-        image:
-          "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/drink/2.png",
-        title: "Monster",
+        img:
+          "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/personal-care/2.png",
+        name: "Monster",
+        vit: "Drinks",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
       {
         id: 3,
-        image:
-          "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/drink/3.png",
-        title: "Ginger Ale",
+        img:
+          "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/personal-care/3.png",
+        name: "Ginger Ale",
+        vit: "Drinks",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
       {
         id: 4,
-        image:
-          "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/drink/4.png",
-        title: "Onion",
+        img:
+          "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/personal-care/4.png",
+        name: "Onion",
+        vit: "Drinks",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
       {
         id: 5,
-        image:
-          "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/drink/5.png",
-        title: "Baby Chili",
+        img:
+          "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/personal-care/5.png",
+        name: "Baby Chili",
+        vit: "Drinks",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
       {
         id: 6,
-        image:
-          "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/drink/6.png",
-        title: "Broccoli",
+        img:
+          "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/personal-care/6.png",
+        name: "Broccoli",
+        vit: "Drinks",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
       {
         id: 7,
-        image:
-          "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/drink/7.png",
-        title: "Apple",
+        img:
+          "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/personal-care/7.png",
+        name: "Apple",
+        vit: "Drinks",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
       {
         id: 8,
-        image:
-          "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/drink/8.png",
-        title: "Strawberry",
+        img:
+          "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/personal-care/8.png",
+        name: "Strawberry",
+        vit: "Drinks",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
     ];
 

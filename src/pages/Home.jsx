@@ -17,6 +17,7 @@ import Coffee from "../components/Coffee/Coffee";
 import Kitchen from "../components/Kitchen/Kitchen";
 import BlogComponent from "../components/BlogComponent/BlogComponent";
 import ServiceComponent from "../components/ServiceComponent/Service";
+import Sticky from "../components/StickyNav/Sticky";
 function Home(){
     return(
         <>
@@ -37,6 +38,8 @@ function Home(){
         <Kitchen />
         <BlogComponent />
         <ServiceComponent />
+        <Sticky />
+
         <Footer />
 
        </>

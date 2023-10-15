@@ -1,11 +1,28 @@
-import React from "react";
+import React,{useEffect,useState} from "react";
 import { Link } from "react-router-dom";
 import { connect } from 'react-redux';
 function Header(props) {
+  const [isHeaderFixed, setHeaderFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 100) {
+        setHeaderFixed(true);
+      } else {
+        setHeaderFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
       <header className="mainhead">
-        <div className="container-fluid">
+        <div className={`container-fluid headd-sticky ${isHeaderFixed ? "fixed-sticky" : ""}`}>
           <div className="row">
             <div className="col-12">
               <div className="blue_head">
@@ -108,11 +125,13 @@ function Header(props) {
                   </li >
                   <li >
                     <Link to={`/shop/detail/${1}`}>
-                   Product
+                      Product
                     </Link>
                   </li>
                   <li>
-                    Mega Menu
+                    <Link to="/about">
+                      About
+                    </Link>
                   </li>
                   <li>
                     Blog
@@ -139,7 +158,7 @@ function Header(props) {
                   </Link>
                 </li>
                 <li className="bag">
-                  <Link to="/shop" className="bag_icon">
+                  <Link to='/shopcart' className="bag_icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
                       <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
                     </svg>
@@ -170,7 +189,7 @@ function Header(props) {
             </div>
           </div>
         </div>
-      </header>
+      </header >
     </>
   );
 }

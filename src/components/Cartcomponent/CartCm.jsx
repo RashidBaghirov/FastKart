@@ -93,7 +93,7 @@ function CartCm(props) {
                                                 const price = parseFloat(item.price);
                                                 const disPrice = parseFloat(item.disPrice);
                                                 const saving = price - disPrice;
-                                                const truncatedName = item.name.substring(0, 10);
+                                                const truncatedName = item.name.length > 10 ? item.name.substring(0, 10) : item.name;
                                                 return (
                                                     <tr className="product-box-contain" key={item.id}>
                                                         <td className="product-detail">
@@ -104,7 +104,7 @@ function CartCm(props) {
                                                                 <div className="product-detail">
                                                                     <ul>
                                                                         <li className="name">
-                                                                            <a href="product-left-thumbnail.html">{truncatedName}</a>
+                                                                            <a href="product-left-thumbnail.html">{item.name}</a>
                                                                         </li>
 
                                                                         <li className="text-content"><span className="text-title">Sold By:</span> {item.vit}</li>
@@ -117,7 +117,7 @@ function CartCm(props) {
 
                                                         <td className="price_cart">
                                                             <h4 className="table-title text-content">Price</h4>
-                                                            <h5>${item.disPrice} <del className="text-content">${item.pric}</del></h5>
+                                                            <h5>${item.disPrice} <del className="text-content">${item.price}</del></h5>
                                                             <h6 className="theme-color">You Save : ${saving.toFixed(2) }</h6>
                                                         </td>
 

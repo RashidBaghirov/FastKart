@@ -16,16 +16,78 @@
 @import './../components/ShopComponents/Shop';
 @import './../components/Cartcomponent/cartcm';
 @import './../components/ShopDetailCM/ShopDetail';
+@import './../components/AboutsCM/about';
 
-*{
+* {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     box-sizing: border-box;
 }
 
+#screen-sticky {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 
-h1,h2,h3,h4,h5,h6{
-    overflow: hidden;
+    button {
+        display: block;
+        margin-bottom: 10px;
+        background-color: #006466;
+        border: 1px solid #006466;
+
+        svg {
+            margin-bottom: 4px;
+        }
+    }
 }
 
+.fixed-sticky {
+    position: fixed;
+    transition: .4s;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.headd-sticky {
+    background-color: #239698;
+    padding: 11px;
+}
+
+
+.fixed-sticky {
+    position: fixed;
+    transition: .4s;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.simple {
+    padding: 11px;
+}
+
+
+.fixedup {
+    position: fixed;
+    transition: .4s;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: white;
+    z-index: 555555555555;
+    border-bottom: 0.8px solid #006466;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow: hidden;
+}

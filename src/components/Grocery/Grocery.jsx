@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ProductCard from "../product/Product"; 
+import ProductCard from "../product/Product";
 
 const Grocery = () => {
   const [drinks, setdrinks] = useState([]);
@@ -12,67 +12,75 @@ const Grocery = () => {
     const fakeApiData = [
       {
         id: 1,
-        image:
+        img:
           "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/grocery/1.png",
-        title: "Redd Bull",
+        name: "Redd Bull",
+        vit: "Grocery",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
       {
         id: 2,
-        image:
+        img:
           "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/grocery/2.png",
-        title: "Monster",
+        name: "Monster",
+        vit: "Grocery",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
       {
         id: 3,
-        image:
+        img:
           "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/grocery/3.png",
-        title: "Ginger Ale",
+        name: "Ginger Ale",
+        vit: "Grocery",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
       {
         id: 4,
-        image:
+        img:
           "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/grocery/4.png",
-        title: "Onion",
+        name: "Onion",
+        vit: "Grocery",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
       {
         id: 5,
-        image:
+        img:
           "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/grocery/5.png",
-        title: "Baby Chili",
+        name: "Baby Chili",
+        vit: "Grocery",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
       {
         id: 6,
-        image:
+        img:
           "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/grocery/6.png",
-        title: "Broccoli",
+        name: "Broccoli",
+        vit: "Grocery",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
       {
         id: 7,
-        image:
+        img:
           "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/grocery/7.png",
-        title: "Apple",
+        name: "Apple",
+        vit: "Grocery",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
       {
         id: 8,
-        image:
+        img:
           "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/grocery/8.png",
-        title: "Strawberry",
+        name: "Strawberry",
+        vit: "Grocery",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
     ];
 

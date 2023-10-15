@@ -2,11 +2,27 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { connect } from 'react-redux';
 function AllHeader(props) {
+    const [isHeaderFixed, setHeaderFixed] = useState(false);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY >= 100) {
+                setHeaderFixed(true);
+            } else {
+                setHeaderFixed(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
     return (
         <>
             <header className="allhead">
-                <div className="container-fluid uppp">
+            <div className={`container-fluid uppp ${isHeaderFixed ? "fixedup" : ""}`}>
                     <div className="row">
                         <div className="col-12">
                             <div className="blue_head">
@@ -213,7 +229,9 @@ function AllHeader(props) {
                                         </Link>
                                     </li>
                                     <li>
-                                        Mega Menu
+                                        <Link to="/about">
+                                            About
+                                        </Link>
                                     </li>
                                     <li>
                                         Blog

@@ -12,67 +12,75 @@ const Breakfast = () => {
     const fakeApiData = [
       {
         id: 1,
-        image:
+        img:
           "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/breakfast/1.png",
-        title: "Bell pepper",
+        name: "Bell pepper",
+        vit:"Breakfast",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
       {
         id: 2,
-        image:
+        img:
           "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/breakfast/2.png",
-        title: "Eggplant",
+        name: "Eggplant",
+        vit:"Breakfast",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
       {
         id: 3,
-        image:
+        img:
           "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/breakfast/3.png",
-        title: "Potato",
+        name: "Potato",
+        vit:"Breakfast",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
       {
         id: 4,
-        image:
+        img:
           "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/breakfast/4.png",
-        title: "Onion",
+        name: "Onion",
+        vit:"Breakfast",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
       {
         id: 5,
-        image:
+        img:
           "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/fruits-vegetables/5.png",
-        title: "Baby Chili",
+        name: "Baby Chili",
+        vit:"Breakfast",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
       {
         id: 6,
-        image:
+        img:
           "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/fruits-vegetables/6.png",
-        title: "Broccoli",
+        name: "Broccoli",
+        vit:"Breakfast",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
       {
         id: 7,
-        image:
+        img:
           "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/fruits-vegetables/7.png",
-        title: "Apple",
+        name: "Apple",
+        vit:"Breakfast",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
       {
         id: 8,
-        image:
+        img:
           "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/fruits-vegetables/8.png",
-        title: "Strawberry",
+        name: "Strawberry",
+        vit:"Breakfast",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
     ];
 

@@ -12,67 +12,75 @@ const Chemistry = () => {
     const fakeApiData = [
       {
         id: 1,
-        image:
+        img:
           "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/chemist/1.png",
-        title: "Bell pepper",
+        name: "Bell pepper",
+        vit:"Chemistry",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
       {
         id: 2,
-        image:
+        img:
           "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/chemist/2.png",
-        title: "Eggplant",
+          name: "Eggplant",
+          vit:"Chemistry",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
       {
         id: 3,
-        image:
+        img:
           "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/chemist/3.png",
-        title: "Potato",
+        name: "Potato",
+        vit:"Chemistry",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
       {
         id: 4,
-        image:
+        img:
           "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/chemist/4.png",
-        title: "Onion",
+        name: "Onion",
+        vit:"Chemistry",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
       {
         id: 5,
-        image:
+        img:
           "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/chemist/5.png",
-        title: "Baby Chili",
+        name: "Baby Chili",
+        vit:"Chemistry",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
       {
         id: 6,
-        image:
+        img:
           "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/chemist/6.png",
-        title: "Broccoli",
+        name: "Broccoli",
+        vit:"Chemistry",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
       {
         id: 7,
-        image:
+        img:
           "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/chemist/2.png",
-        title: "Apple",
+        name: "Apple",
+        vit:"Chemistry",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
       {
         id: 8,
-        image:
+        img:
           "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/chemist/8.png",
-        title: "Strawberry",
+        name: "Strawberry",
+        vit:"Chemistry",
         price: "71.25",
-        discountprice: "65.21"
+        disPrice: "65.21"
       },
     ];
 

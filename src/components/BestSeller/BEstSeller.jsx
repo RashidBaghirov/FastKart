@@ -12,83 +12,93 @@ const BestSeller = () => {
         const fakeApiData = [
             {
                 id: 1,
-                image:
+                img:
                     "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/fruits-vegetables/1.png",
-                title: "Bell pepper",
+                name: "Bell pepper",
+                vit: "BestSeller",
                 price: "71.25",
-                discountprice: "65.21"
+                disPrice: "65.21"
             },
             {
                 id: 2,
-                image:
+                img:
                     "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/fruits-vegetables/2.png",
-                title: "Eggplant",
+                name: "Eggplant",
+                vit: "BestSeller",
                 price: "71.25",
-                discountprice: "65.21"
+                disPrice: "65.21"
             },
             {
                 id: 3,
-                image:
+                img:
                     "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/fruits-vegetables/3.png",
-                title: "Potato",
+                name: "Potato",
+                vit: "BestSeller",
                 price: "71.25",
-                discountprice: "65.21"
+                disPrice: "65.21"
             },
             {
                 id: 4,
-                image:
+                img:
                     "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/fruits-vegetables/4.png",
-                title: "Onion",
+                name: "Onion",
+                vit: "BestSeller",
                 price: "71.25",
-                discountprice: "65.21"
+                disPrice: "65.21"
             },
             {
                 id: 5,
-                image:
+                img:
                     "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/fruits-vegetables/5.png",
-                title: "Baby Chili",
+                name: "Baby Chili",
+                vit: "BestSeller",
                 price: "71.25",
-                discountprice: "65.21"
+                disPrice: "65.21"
             },
             {
                 id: 6,
-                image:
+                img:
                     "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/fruits-vegetables/6.png",
-                title: "Broccoli",
+                name: "Broccoli",
+                vit: "BestSeller",
                 price: "71.25",
-                discountprice: "65.21"
+                disPrice: "65.21"
             },
             {
                 id: 7,
-                image:
+                img:
                     "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/fruits-vegetables/7.png",
-                title: "Apple",
+                name: "Apple",
+                vit: "BestSeller",
                 price: "71.25",
-                discountprice: "65.21"
+                disPrice: "65.21"
             },
             {
                 id: 8,
-                image:
+                img:
                     "https://themes.pixelstrap.com/fastkart/assets/images/grocery/product/fruits-vegetables/8.png",
-                title: "Strawberry",
+                name: "Strawberry",
+                vit: "BestSeller",
                 price: "71.25",
-                discountprice: "65.21"
+                disPrice: "65.21"
             },
             {
                 id: 9,
-                image:
+                img:
                     "https://themes.pixelstrap.com/fastkart/assets/images/grocery/deal/1.png",
-                title: "Potato Chips",
+                name: "Potato Chips",
+                vit: "BestSeller",
                 price: "71.25",
-                discountprice: "65.21"
+                disPrice: "65.21"
             },
             {
                 id: 10,
-                image:
+                img:
                     "https://themes.pixelstrap.com/fastkart/assets/images/grocery/deal/3.png",
-                title: "Nithara Coffee",
+                name: "Nithara Coffee",
+                vit: "BestSeller",
                 price: "71.25",
-                discountprice: "65.21"
+                disPrice: "65.21"
             },
         ];
 
@@ -187,45 +197,45 @@ const BestSeller = () => {
         ),
     };
     return (
-     <>
-        <div className="bestseller">
-            <div className="container-fluid">
-                <h2>Fruits & Vegetables</h2>
-                <div className="row">
-                    <div className="col-8">
+        <>
+            <div className="bestseller">
+                <div className="container-fluid">
+                    <h2>Fruits & Vegetables</h2>
+                    <div className="row">
+                        <div className="col-8">
 
-                        <Slider {...sliderSettings}>
-                            {bests.map((best) => (
+                            <Slider {...sliderSettings}>
+                                {bests.map((best) => (
 
-                                <div className="left side">
-                                    <ProductCard key={best.id} product={best} />
-                                </div>
+                                    <div className="left side">
+                                        <ProductCard key={best.id} product={best} />
+                                    </div>
 
-                            ))}
-                        </Slider>
+                                ))}
+                            </Slider>
 
-                    </div>
-                    <div className="col-4">
-                        <Link>
-                            <img src="./image/Screenshot 2023-10-10 195253.png" alt="" />
-                        </Link>
+                        </div>
+                        <div className="col-4">
+                            <Link>
+                                <img src="./image/Screenshot 2023-10-10 195253.png" alt="" />
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-     
 
-     <div className="offers_box">
-        <div className="container-fluid">
-            <div className="image">
-                <img src="/image/Screenshot 2023-10-10 204236.png" alt="" />
+
+            <div className="offers_box">
+                <div className="container-fluid">
+                    <div className="image">
+                        <img src="/image/Screenshot 2023-10-10 204236.png" alt="" />
+                    </div>
+                </div>
             </div>
-        </div>
-     </div>
-     
-     </>
 
-        
+        </>
+
+
     );
 };
 
